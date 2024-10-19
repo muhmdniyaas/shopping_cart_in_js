@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <header>
+        <div class="icons">
+            <a href="#"><i class="ri-search-line"></i></a>
+            <a href="#"><i class="ri-user-line"></i></a>
+            <a href="cart.html"><i class="ri-shopping-cart-line"></i></a>
+            <div class="box menu" id="menu-icons"></div>
+        </div>
+    </header>    
+    <div class="main-wrapper">
+        <div class="container">
+            <div class="product-div">
+                <div class="product-div-left">
+                    <div class="img-container">
+                        <img id="main-image" src="pro1.jpg.jpg" alt="Printed Shirt">
+                    </div>
+                    <div class="hover-container">
+                        <div>
+                            <img src="pro1sub2.jpg" alt="Printed Shirt View 1" onclick="changeImage('pro1sub2.jpg')">
+                        </div>
+                        <div>
+                            <img src="pro1sub.jpg" alt="Printed Shirt View 2" onclick="changeImage('pro1sub.jpg')">
+                        </div>
+                        <div>
+                            <img src="pro1sub3.jpg" alt="Printed Shirt View 3" onclick="changeImage('pro1sub3.jpg')">
+                        </div>
+                    </div>
+                </div>
+                <div class="product-div-right">
+                    <span class="product-name">Printed Shirt</span>
+                    <span class="product-price-original-price">2099</span>
+                    <span class="product-price-discounted-price">1399</span>
+                    <div class="product-rating">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                    </div>
+                    <p class="product-description">New arrived printed shirt with Cuban color and wonderful material.</p>
+                    <div class="btn-groups">
+                        <button id="addToCartBtn" type="button" class="add-cart-btn" onclick="addToCart('Printed Shirt', 1399, 'pro1.jpg')">
+                            <i class="fas fa-plus"></i> Add to Cart
+                        </button>
+                        <button type="button" class="buy-now-btn">
+                            <i class="fas fa-shopping-cart"></i> Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="product.js"></script>
+</body>
+</html>
